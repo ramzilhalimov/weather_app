@@ -1,0 +1,33 @@
+.header {
+  background-image: url("../../../public/default-background.jpg");
+  background-size: cover;
+  padding-top: 20px;
+}
+.header-input {
+  width: 150px;
+  height: 29px;
+}
+.header-button {
+  height: 35px;
+  width: 150px;
+}
+.current-section-name {
+  margin-bottom: -20px;
+}
+.current-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.content-section {
+  border-top: 2px solid #000000;
+}
+.content-section-name {
+  margin-bottom: 20px;
+}
+.justify-content-center {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: -60px;
+}
