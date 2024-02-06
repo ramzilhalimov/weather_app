@@ -51,7 +51,7 @@ export const WeekContainer = () => {
   };
 
   return (
-    <div className="header">
+    <div className="header center">
       <input
         className="header-input"
         type="text"
@@ -63,19 +63,21 @@ export const WeekContainer = () => {
       </button>
 
       {currentWeather && (
-        <div className="current-section">
+        <div className="current-section center">
           <h2 className="current-section-name">Текущая погода:</h2>
-          <img className="card-image" alt="weather" src={iconURL} />
-          <p>Температура: {Math.round(currentWeather.main?.temp)} °C</p>
-          <p>Скорость ветра: {currentWeather.wind.speed} м/c</p>
-          <p>Влажность: {currentWeather.main.humidity}%</p>
-          <p>Погодные условия: {currentWeather.weather[0].description}</p>
+          <div className="current-section-card">
+            <img className="card-image" alt="weather" src={iconURL} />
+            <p>Температура: {Math.round(currentWeather.main?.temp)} °C</p>
+            <p>Скорость ветра: {currentWeather.wind.speed} м/c</p>
+            <p>Влажность: {currentWeather.main.humidity}%</p>
+            <p> {currentWeather.weather[0].description}</p>
+          </div>
         </div>
       )}
 
-      <div className="content-section">
+      <div className="content-section center">
         <h2 className="content-section-name">Прогноз погоды на 5 дней</h2>
-        <div className="justify-content-center">{formatCards()}</div>
+        <div className="justify-content">{formatCards()}</div>
       </div>
     </div>
   );

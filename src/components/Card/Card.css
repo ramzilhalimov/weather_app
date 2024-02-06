@@ -1,26 +1,26 @@
-.icon-style {
-  font-size: 10em;
-  color: #44aadd;
-}
-
-.btn {
-  background-color: #44aadd;
-  min-width: 80%;
-}
-
 .card {
-  width: 20rem;
+  width: 100%;
   padding: 2rem 0;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-hover-effect {
+  cursor: pointer;
+}
+.card-with-border {
+  margin: 5px;
 }
 
 i:hover {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 1.5s;
-
-  /* When the animation is finished, start again */
-  /* animation-iteration-count: infinite;  */
 }
 .card-image {
   width: 120px;

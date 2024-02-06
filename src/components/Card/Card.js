@@ -16,7 +16,7 @@ export const Card = ({ day }) => {
         <h2>{Math.round(day.main.temp)} °C</h2>
         <p>Скорость ветра: {day.wind.speed} м/c</p>
         <p>Влажность: {day.main.humidity}%</p>
-        <p>Погодные условия: {day.weather[0].description}</p>
+        <p> {day.weather[0].description}</p>
       </div>
     </div>
   );
