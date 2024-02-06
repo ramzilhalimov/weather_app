@@ -1,33 +1,45 @@
 .header {
-  background-image: url("../../../public/default-background.jpg");
-  background-size: cover;
   padding-top: 20px;
 }
 .header-input {
   width: 150px;
   height: 29px;
+  margin-right: 5px;
 }
 .header-button {
   height: 35px;
   width: 150px;
 }
 .current-section-name {
-  margin-bottom: -20px;
+  margin-bottom: 15px;
 }
 .current-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.current-section-card {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.2s;
 }
 .content-section {
   border-top: 2px solid #000000;
 }
 .content-section-name {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
-.justify-content-center {
+.justify-content {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 70px;
   margin-top: -60px;
 }
