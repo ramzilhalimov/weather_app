@@ -67,7 +67,7 @@ export const WeekContainer = () => {
           <h2 className="current-section-name">Текущая погода:</h2>
           <div className="current-section-card">
             <img className="card-image" alt="weather" src={iconURL} />
-            <p>Температура: {Math.round(currentWeather.main?.temp)} °C</p>
+            <h2> {Math.round(currentWeather.main?.temp)} °C</h2>
             <p>Скорость ветра: {currentWeather.wind.speed} м/c</p>
             <p>Влажность: {currentWeather.main.humidity}%</p>
             <p> {currentWeather.weather[0].description}</p>
